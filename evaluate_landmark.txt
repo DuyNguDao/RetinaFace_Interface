@@ -1,0 +1,12 @@
+- Evaluate five points facial landmark with NME(Normalize Mean Error)
+- link formula: "https://stackoverflow.com/questions/69158002/how-to-calculate-nmenormalized-mean-error-between-ground-
+truth-and-predicted-l?fbclid=IwAR3sBkezilr-4r3RGxcuxAlxuUAdoyoZYUnEPxM9dOyYYJyv30sNAuo9qtk"
+- Dataset evaluate: 300-W, LFPW
+    AFLW dataset [6]: This dataset contains 21080 more challenging in-the-wild faces with large poses ( with a yaw from
+    -90°to 90°) and each is annotated with no more than 21 visible landmarks, which is suitable for evaluating alignment
+    performance over large poses
+- Plot:
++ y-label: NME
++ x-label: Left eye center, left mouth corner, nose tip, right eye center, right mouth corner
+||a-b||2 = sqrt((ax-bx)**2 + (ay-by)**2)
+L = sqrt(W*H), W: weight of face box, H: height of face box
